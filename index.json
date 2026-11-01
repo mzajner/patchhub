@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "serial": 2,
- "generated": "2026-10-26T21:03:03Z",
- "expires": "2027-01-24T21:03:03Z",
+ "serial": 3,
+ "generated": "2026-11-01T00:20:00Z",
+ "expires": "2027-01-30T00:20:00Z",
  "blocklist": [],
  "packs": [
   {
    "format": "zip",
-   "url": "https://raw.githubusercontent.com/mzajner/patchhub/main/packs/org.openpatch.supersaw-pad-1.0.1.zip",
+   "url": "https://mzajner.github.io/patchhub/packs/org.openpatch.supersaw-pad-1.0.1.zip",
    "sha256": "e0112ec4a9ab820c57542e929efa519202005739cea66481013e410f88f43878",
    "size": 77541,
    "manifest": {
