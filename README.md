@@ -8,7 +8,7 @@ A pack holds data only. It never carries code that runs on your machine, and Pat
 
 1. Open the **Packs** tab.
 2. Paste the shelf address into the field and press **Browse**:
-   `https://raw.githubusercontent.com/mzajner/patchhub/main/index.json`
+   `https://mzajner.github.io/patchhub/index.json`
 3. Press **Install** on the pack you want.
 
 PatchLab does not have this address built in yet, so you paste it once. Before it installs anything it checks the shelf's signature and the fingerprint of every file, and it tells you why when it refuses.

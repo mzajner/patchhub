@@ -26,7 +26,7 @@ You can also open the pull request by hand. One pack per pull request, on a bran
 
 - `packs/<id>-<version>.zip`: the pack
 - `<id>/pack.json`: the summary of the pack's own `pack.json` (id, name, version, description, author, minAppVersion, `licence: {"spdx": ...}`, and any optional fields)
-- `<id>/entry.json`: `{"format": "zip", "url": "https://raw.githubusercontent.com/mzajner/patchhub/main/packs/<id>-<version>.zip", "sha256": "...", "size": ..., "minAppVersion": "..."}`
+- `<id>/entry.json`: `{"format": "zip", "url": "https://mzajner.github.io/patchhub/packs/<id>-<version>.zip", "sha256": "...", "size": ..., "minAppVersion": "..."}`
 
 If the zip is too big for GitHub, host it yourself over https and put that address in `entry.json`. The maintainer then downloads and checks it before merging.
 
@@ -59,7 +59,7 @@ For the maintainer, the steps after a merge are:
 
 ```
 patch pack index-make packs/*.zip -o index.json --serial <last serial + 1> --expires-days 90 \
-  --base-url https://raw.githubusercontent.com/mzajner/patchhub/main/packs --gallery gallery
+  --base-url https://mzajner.github.io/patchhub/packs --gallery gallery
 minisign -Sm index.json -x index.json.sig -s <path to the offline key>
 python3 tools/check_packs.py --signature --strict
 ```

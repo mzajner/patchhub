@@ -11,7 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import check_packs as cp
 
 REPO = Path(__file__).resolve().parents[1]
-ZIP = "org.openpatch.supersaw-pad-1.0.1.zip"
+ZIP = "org.openpatch.supersaw-pad-1.0.2.zip"
 
 
 def rebuild(root, mutate):

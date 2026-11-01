@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 
 PUBLIC_KEY = "RWQO87fofYsYyI+wcOUDQzXyyU3Ee72WI7bSXMX1sXgj7s5/cWdVGBOU"   # PatchCore hub_trust.h
-RAW_BASE = "https://raw.githubusercontent.com/mzajner/patchhub/main/packs/"
+RAW_BASE = "https://mzajner.github.io/patchhub/packs/"   # the index's own host: the app refuses archives elsewhere
 LICENCE = "CC-BY-4.0"
 MAX_FILE, MAX_PACK, MAX_ENTRIES, MAX_DOC = 128 << 20, 512 << 20, 4096, 8 << 20   # packs.h
 HUB_MAX_ZIP = 50 << 20            # GitHub warns at 50 MiB and refuses 100 MiB
@@ -30,7 +30,7 @@ PURPOSES = ("instrument", "effect", "midi", "learn", "utility")
 IMAGES = {".png", ".jpg", ".jpeg", ".gif", ".webp"}
 AUDIO = {".wav", ".flac", ".aif", ".aiff", ".ogg", ".mp3"}
 KINDS = {"face-asset": IMAGES | {".json"}, "nam-model": {".json", ".nam"}, "preset": {".plpreset"},
-         "wasm-block": {".wasm"}, "sample": AUDIO}
+         "wasm-block": {".wasm"}, "sample": AUDIO, "patch": {".plpatch", ".json"}}
 DOCS = {".json", ".nam", ".plpreset", ".xml", ".svg"}
 NATIVE = {".dylib", ".so", ".dll", ".vst3", ".component", ".clap", ".exe"}
 NESTED = {".zip", ".7z", ".rar", ".tar", ".gz", ".tgz", ".bz2", ".xz"}
