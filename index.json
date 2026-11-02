@@ -1,26 +1,35 @@
 {
  "schema": 1,
- "serial": 4,
- "generated": "2026-11-01T00:47:16Z",
- "expires": "2027-01-30T00:47:16Z",
+ "serial": 5,
+ "generated": "2026-11-02T15:14:08Z",
+ "expires": "2027-01-31T15:14:08Z",
  "blocklist": [],
  "packs": [
   {
    "format": "zip",
-   "url": "https://mzajner.github.io/patchhub/packs/org.openpatch.supersaw-pad-1.0.2.zip",
-   "sha256": "ba192682f07d93ab2e6567e7cb7639bc326b4f7d2b0f5e9caca6f901d04a2363",
-   "size": 69053,
+   "url": "https://mzajner.github.io/patchhub/packs/org.openpatch.supersaw-pad-1.0.3.zip",
+   "sha256": "f73987c8affa37b5eaddb32cceafc4accaf8ab83ff8a5cb3a1955621d9277af1",
+   "size": 385241,
    "manifest": {
     "id": "org.openpatch.supersaw-pad",
     "name": "Supersaw Pad",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A detuned supersaw wavetable pad with factory presets.",
     "author": "Michael Zajner",
     "minAppVersion": "0.1.0",
+    "purpose": "instrument",
     "licence": {
      "spdx": "CC-BY-4.0"
     }
-   }
+   },
+   "preview": {
+    "url": "https://mzajner.github.io/patchhub/packs/org.openpatch.supersaw-pad-1.0.3.preview.flac",
+    "sha256": "b1a4919b04bf8ca5d102920401d0927636f3b40a29651bd8fbd30014d4ac0a95",
+    "seconds": 8
+   },
+   "featured": true,
+   "official": true,
+   "order": 1
   }
  ]
 }
